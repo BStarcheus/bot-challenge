@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Bot Challenge</title>
+  </head>
+  <body>
+    <div class="bot-wrapper">
+      <h1>Bot Challenge</h1>
+      <p>
+        Congratulations on finding another Hummus Challenge. 
+        This time it’s a faceoff between you and a machine learning model. 
+        Can you correctly classify more images than the machine?
+      </p>
+      <p>
+        Machine learning models are designed to be used with large sets of data. 
+        Similarly, humans do better when they gather more information and see more examples. 
+        So how well can each perform when they are given very little data?
+      </p>
+      <p>
+        To put this to the test, we’ll give the machine learning model 60 pieces of training data, but we’ll give you only 6. 
+        Humans are great at recognizing patterns, so to make this a fair fight we’ve given the data similar names and you’ll only get 3 seconds per question. 
+        Can you beat the machine even though it has 10 times the data to learn from?
+      </p>
+      <p>
+        As you can see below, we’ve randomly generated images that follow certain patterns. 
+        All images with the same pattern belong to the same <b>class</b>. In our data the names of the classes are Hummly, Hummel, and Hummster. 
+        In machine learning we consider the images the <b>inputs</b>, and the names, or <b>labels</b>, the <b>outputs</b>. 
+      </p>
+      <p>
+        Our training data provides both the inputs and outputs, which is called supervised learning.
+        Also, since all images belong to one (and only one) class, this is a multi-class classification problem.
+      </p>
+      <p>
+        Learn from the data, take the quiz, and beat the bot to get your next clue!
+      </p>
+      
+      <div id="sampleData"></div>
+      
+      <div class="quiz-wrapper">
+        <h5 id="progress"></h5>
+        <h5 id="timer"></h5>
+        <div id="quiz-msg" style="padding-top: 130px;">Classify each image in under 3 seconds. Beat the bot!</div>
+        <button id="start" class="btn btn-primary" onclick="document.getElementById('start').style = 'display: none;';">Start</button>
+        <button id="tryAgain" class="btn btn-secondary" style="display: none;" onclick="document.getElementById('tryAgain').style = 'display: none;';">Try Again</button>
+
+        <div id="quiz-content"></div>
+        <button class="quiz-ans-btn btn btn-primary" style="display: none;" value=0>Hummly</button>
+        <button class="quiz-ans-btn btn btn-primary" style="display: none;" value=1>Hummel</button>
+        <button class="quiz-ans-btn btn btn-primary" style="display: none;" value=2>Hummster</button>
+      </div>
+
+      <script src="script.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div> 
+  </body>
+</html>
