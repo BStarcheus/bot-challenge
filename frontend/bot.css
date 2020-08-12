@@ -30,8 +30,10 @@ h1, h3, h5, #sampleData, .quiz-wrapper {
 }
 
 
-.quiz-ans-btn {
+#start, #tryAgain, #ans0, #ans1, #ans2 {
     margin: 10px;
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
 #progress {
