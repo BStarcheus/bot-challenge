@@ -1,0 +1,4 @@
+Flask
+Flask_CORS
+gunicorn
+tensorflow
